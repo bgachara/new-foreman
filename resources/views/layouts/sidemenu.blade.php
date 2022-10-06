@@ -2,7 +2,7 @@
 
 @section('body')
 <div class="flex flex-row">
-    <div class="flex flex-col w-56 h-screen px-4 py-4 bg-white border-r dark:bg-gray-900 dark:border-gray-700">
+    <div class="flex flex-col w-56 h-screen px-4 py-4 bg-gray-100 border-r dark:bg-gray-900 dark:border-gray-700">
         <h2 class="text-2xl font-semibold text-center text-gray-800 dark:text-white">FOREMAN</h2>
 
 

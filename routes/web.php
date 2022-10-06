@@ -28,6 +28,30 @@ Route::get('dashboard', function () {
 Route::get('transaction', function () {
     return view('pages/transaction');
 });
+Route::get('material', function () {
+    return view('pages/transactions/material');
+});
+Route::get('contigencies', function () {
+    return view('pages/transactions/contigencies');
+});
+Route::get('equipment', function () {
+    return view('pages/transactions/equipment');
+});
+Route::get('labour', function () {
+    return view('pages/transactions/labour');
+});
+Route::get('miscellaneous', function () {
+    return view('pages/transactions/miscellaneous');
+});
+Route::get('services', function () {
+    return view('pages/transactions/services');
+});
+Route::get('subcontractor', function () {
+    return view('pages/transactions/subcontractor');
+});
+Route::get('vat', function () {
+    return view('pages/transactions/vat');
+});
 Route::get('notices', function () {
     return view('pages/notices');
 });

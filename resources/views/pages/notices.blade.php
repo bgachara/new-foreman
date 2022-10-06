@@ -2,7 +2,7 @@
 
 @section('main_body')
 <div class="flex flex-col w-full">
-<header class="bg-gray-100 w-full h-20">
+<header class="border-b border-gray-300 bg-gray-100 w-full h-20">
   <div class="mx-auto px-3 py-3 sm:px-6 lg:px-8">
     <div class="flex items-center justify-end gap-4">
       <div class="flex items-center gap-4">
@@ -84,8 +84,8 @@
     </div>
   </div>
 </header>
-<body class="w-full bg-gray-300">
+<section class="h-full bg-gray-100">
   <p>Notices Page</p>
-</body>
+</section>
 </div>
 @endsection
