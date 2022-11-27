@@ -152,7 +152,7 @@
       <div class="p-5 lg:p-6 grow w-full flex justify-between items-center">
         <dl>
           <dt class="text-2xl font-semibold">
-            $5,128
+            Ksh 5,128
           </dt>
           <dd class="uppercase font-medium text-sm text-gray-500 tracking-wider">
             Earnings
@@ -179,10 +179,10 @@
       <div class="p-5 lg:p-6 grow w-full flex justify-between items-center">
         <dl>
           <dt class="text-2xl font-semibold">
-            $2,670
+            Ksh 2,670
           </dt>
           <dd class="uppercase font-medium text-sm text-gray-500 tracking-wider">
-            Wallet
+            Credit
           </dd>
         </dl>
         <div class="font-semibold inline-flex px-2 py-1 leading-4 items-center space-x-1 text-sm rounded-full text-emerald-700 bg-emerald-200">

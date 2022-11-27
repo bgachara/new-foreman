@@ -1,50 +1,30 @@
 @extends('layouts.sidemenu')
 
 @section('main_body')
-<div class="flex flex-col w-full">
-<header class="border-b border-gray-300 bg-gray-100 w-full h-20">
+
+<div class="flex flex-col w-full py-1">
+<header class="border-b border-gray-300 bg-gray-100 w-full h-14">
   <div class="mx-auto px-3 py-3 sm:px-6 lg:px-8">
     <div class="flex items-center justify-end gap-4">
+      <div class="flex items-center gap-4">       
+        <a
+          href=""
+          class="block shrink-0 rounded-full bg-white p-2.5 text-gray-600 shadow-sm hover:text-gray-700"
+        >
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15 19.128a9.38 9.38 0 002.625.372 9.337 9.337 0 004.121-.952 4.125 4.125 0 00-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 018.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0111.964-3.07M12 6.375a3.375 3.375 0 11-6.75 0 3.375 3.375 0 016.75 0zm8.25 2.25a2.625 2.625 0 11-5.25 0 2.625 2.625 0 015.25 0z" />
+        </svg>
+        
+        </a>
+      </div>
       <div class="flex items-center gap-4">
-        <div class="relative">
-          <label class="sr-only" for="search"> Search </label>
-
-          <input
-            class="h-10 w-full rounded-full border-none bg-white pl-4 pr-10 text-sm shadow-sm sm:w-56"
-            id="search"
-            type="search"
-            placeholder="Search website..."
-          />
-
-          <button
-            class="absolute top-1/2 right-1 -translate-y-1/2 rounded-full bg-gray-50 p-2 text-gray-600 transition hover:text-gray-700"
-            type="button"
-            aria-label="Submit Search"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-4 w-4"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              stroke-width="2"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-              />
-            </svg>
-          </button>
-        </div>
-
         <a
           href=""
           class="block shrink-0 rounded-full bg-white p-2.5 text-gray-600 shadow-sm hover:text-gray-700"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            class="h-5 w-5"
+            class="h-4 w-4"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -61,7 +41,7 @@
           href=""
           class="block shrink-0 rounded-full bg-white p-2.5 text-gray-600 shadow-sm hover:text-gray-700"
         >
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
           <path stroke-linecap="round" stroke-linejoin="round" d="M15 19.128a9.38 9.38 0 002.625.372 9.337 9.337 0 004.121-.952 4.125 4.125 0 00-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 018.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0111.964-3.07M12 6.375a3.375 3.375 0 11-6.75 0 3.375 3.375 0 016.75 0zm8.25 2.25a2.625 2.625 0 11-5.25 0 2.625 2.625 0 015.25 0z" />
         </svg>
         
@@ -72,33 +52,22 @@
         aria-hidden="true"
         class="block h-6 w-px rounded-full bg-gray-200"
       ></span>
-
-      {{-- <a href="#" class="block shrink-0">
-        <img
-          alt="Man"
-          src="https://images.unsplash.com/photo-1600486913747-55e5470d6f40?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
-          class="h-10 w-10 rounded-full object-cover"
-        />
-      </a> --}}
     </div>
 
-    <div class="-mt-7">
-      <h1 class="text-lg font-bold text-gray-900 sm:text-lg">
+    <div class="-mt-9">
+      <h1 class="text-base font-semibold text-gray-700 sm:text-lg">
         Welcome Back, Random
       </h1>
-
-      <p class="text-sm text-gray-500">
-        Stay upto date with your construction inventory, metrics and reports here.
-      </p>
     </div>
   </div>
 </header>
-<section class="bg-gray-100 h-full">
+
+<section class="bg-gray-100 h-auto">
 
     <div class="lg:flex lg:items-center lg:justify-between m-1">
         <div class="min-w-0 flex-1">
-          <h2 class="text-2xl font-bold leading-7 text-gray-900 sm:truncate sm:text-3xl sm:tracking-tight">Back End Developer</h2>
-          <div class="mt-1 flex flex-col sm:mt-0 sm:flex-row sm:flex-wrap sm:space-x-6">
+          <h2 class="text-xl font-semibold border-2 border-gray-300 leading-7 text-gray-700 ml-2 p-3 sm:truncate sm:text-2xl sm:tracking-tight">Material Sheets</h2>
+          {{-- <div class="mt-1 flex flex-col sm:mt-0 sm:flex-row sm:flex-wrap sm:space-x-6">
             <div class="mt-2 flex items-center text-sm text-gray-500">
               <!-- Heroicon name: mini/briefcase -->
               <svg class="mr-1.5 h-5 w-5 flex-shrink-0 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
@@ -129,9 +98,9 @@
               </svg>
               Closing on January 9, 2020
             </div>
-          </div>
+          </div> --}}
         </div>
-        <div class="mt-5 flex lg:mt-0 lg:ml-4">
+        <div class="mt-5 mr-6 flex lg:mt-0 lg:ml-4">
           <span class="hidden sm:block">
             <button type="button" class="inline-flex items-center rounded-md border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
               <!-- Heroicon name: mini/pencil -->
@@ -159,7 +128,7 @@
               <svg class="-ml-1 mr-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                 <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
               </svg>
-              Publish
+              Add Entry
             </button>
           </span>
       
@@ -193,7 +162,7 @@
       </div>
       
     
-<div class="overflow-x-auto relative shadow-md sm:rounded-lg mx-2 mt-8">
+<div class="overflow-x-auto relative shadow-sm sm:rounded-lg mt-4">
   <div class="flex justify-between items-center py-4 bg-white dark:bg-gray-800">
       <div>
           <button id="dropdownActionButton" data-dropdown-toggle="dropdownAction" class="ml-2 inline-flex items-center text-gray-500 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-lg text-sm px-3 py-1.5 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700" type="button">
@@ -232,7 +201,7 @@
   <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
       <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
           <tr>
-              <th scope="col" class="p-4">
+              <th scope="col" class="p-3">
                   <div class="flex items-center">
                       <input id="checkbox-all-search" type="checkbox" class="w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
                       <label for="checkbox-all-search" class="sr-only">checkbox</label>
@@ -258,9 +227,11 @@
               </th>
           </tr>
       </thead>
+
       <tbody>
+
           <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-              <td class="p-4 w-4">
+              <td class="p-3 w-4">
                   <div class="flex items-center">
                       <input id="checkbox-table-search-1" type="checkbox" class="w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
                       <label for="checkbox-table-search-1" class="sr-only">checkbox</label>
@@ -270,7 +241,6 @@
                   {{-- <img class="w-10 h-10 rounded-full" src="/docs/images/people/profile-picture-1.jpg" alt="Jese image"> --}}
                   <div class="pl-3">
                       <div class="text-base font-semibold">Neil Sims</div>
-                      <div class="font-normal text-gray-500">neil.sims@flowbite.com</div>
                   </div>  
               </th>
               <td class="py-4 px-6">
@@ -305,7 +275,7 @@
                   {{-- <img class="w-10 h-10 rounded-full" src="/docs/images/people/profile-picture-3.jpg" alt="Jese image"> --}}
                   <div class="pl-3">
                       <div class="text-base font-semibold">Bonnie Green</div>
-                      <div class="font-normal text-gray-500">bonnie@flowbite.com</div>
+                     
                   </div>
               </th>
               <td class="py-4 px-6">
@@ -340,7 +310,7 @@
                   {{-- <img class="w-10 h-10 rounded-full" src="/docs/images/people/profile-picture-2.jpg" alt="Jese image"> --}}
                   <div class="pl-3">
                       <div class="text-base font-semibold">Jese Leos</div>
-                      <div class="font-normal text-gray-500">jese@flowbite.com</div>
+                      
                   </div>
               </th>
               <td class="py-4 px-6">
@@ -364,6 +334,7 @@
                   <a href="#" type="button" data-modal-toggle="editUserModal" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit user</a>
               </td>
           </tr>
+
           <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
               <td class="p-4 w-4">
                   <div class="flex items-center">
@@ -375,7 +346,7 @@
                   {{-- <img class="w-10 h-10 rounded-full" src="/docs/images/people/profile-picture-5.jpg" alt="Jese image"> --}}
                   <div class="pl-3">
                       <div class="text-base font-semibold">Thomas Lean</div>
-                      <div class="font-normal text-gray-500">thomes@flowbite.com</div>
+                      
                   </div>
               </th>
               <td class="py-4 px-6">
@@ -399,7 +370,8 @@
                   <a href="#" type="button" data-modal-toggle="editUserModal" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit user</a>
               </td>
           </tr>
-          <tr class="bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-600">
+
+          <tr class="bg-white border-b dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-600">
               <td class="p-4 w-4">
                   <div class="flex items-center">
                       <input id="checkbox-table-search-3" type="checkbox" class="w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
@@ -410,7 +382,7 @@
                   {{-- <img class="w-10 h-10 rounded-full" src="" alt=""> --}}
                   <div class="pl-3">
                       <div class="text-base font-semibold">Leslie Livingston</div>
-                      <div class="font-normal text-gray-500">leslie@flowbite.com</div>
+                    
                   </div>
               </th>
               <td class="py-4 px-6">
@@ -434,19 +406,101 @@
                   <a href="#" type="button" data-modal-toggle="editUserModal" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit user</a>
               </td>
           </tr>
+
+          <tr class="bg-white border-b dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-600">
+              <td class="p-4 w-4">
+                  <div class="flex items-center">
+                      <input id="checkbox-table-search-3" type="checkbox" class="w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                      <label for="checkbox-table-search-3" class="sr-only">checkbox</label>
+                  </div>
+              </td>
+              <th scope="row" class="flex items-center py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                  {{-- <img class="w-10 h-10 rounded-full" src="" alt=""> --}}
+                  <div class="pl-3">
+                      <div class="text-base font-semibold">Leslie Livingston</div>
+                    
+                  </div>
+              </th>
+              <td class="py-4 px-6">
+                  SEO Specialist
+              </td>
+              <td class="py-4 px-6">
+                React Developer
+            </td>
+            <td class="py-4 px-6">
+                <div class="flex items-center">
+                    20
+                </div>
+            </td>
+              <td class="py-4 px-6">
+                  <div class="flex items-center">
+                     100,000
+                  </div>
+              </td>
+              <td class="py-4 px-6">
+                  <!-- Modal toggle -->
+                  <a href="#" type="button" data-modal-toggle="editUserModal" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit user</a>
+              </td>
+          </tr>
+          <tr class="bg-white border-b dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-600">
+              <td class="p-4 w-4">
+                  <div class="flex items-center">
+                      <input id="checkbox-table-search-3" type="checkbox" class="w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                      <label for="checkbox-table-search-3" class="sr-only">checkbox</label>
+                  </div>
+              </td>
+              <th scope="row" class="flex items-center py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                  {{-- <img class="w-10 h-10 rounded-full" src="" alt=""> --}}
+                  <div class="pl-3">
+                      <div class="text-base font-semibold">Leslie Livingston</div>
+                    
+                  </div>
+              </th>
+              <td class="py-4 px-6">
+                  SEO Specialist
+              </td>
+              <td class="py-4 px-6">
+                React Developer
+            </td>
+            <td class="py-4 px-6">
+                <div class="flex items-center">
+                    20
+                </div>
+            </td>
+              <td class="py-4 px-6">
+                  <div class="flex items-center">
+                     100,000
+                  </div>
+              </td>
+              <td class="py-4 px-6">
+                  <!-- Modal toggle -->
+                  <a href="#" type="button" data-modal-toggle="editUserModal" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit user</a>
+              </td>
+          </tr>
+
       </tbody>
+
   </table>
-  <div class="px-5 py-5 bg-white border-t flex flex-col xs:flex-row items-center xs:justify-between h-14">
-    <span class="text-xs xs:text-sm text-gray-900">
-        Showing 1 to 4 of 50 Entries
-    </span>
-    <div class="inline-flex mt-2 xs:mt-0">
-        <button
-            class="text-sm bg-gray-300 hover:bg-gray-400 text-gray-800 font-semibold py-2 px-4 rounded-l">
+
+  <div class="px-5 py-5 bg-white flex flex-col xs:flex-row items-center xs:justify-between">
+    <span class=" inline-flex text-xs xs:text-sm text-gray-900">
+        <p>Showing 1 to 7 of 50 Entries</p>
+        {{-- <button
+            class="text-sm bg-gray-200 hover:bg-gray-400 text-gray-800 font-semibold py-2 px-4 rounded-l">
             Prev
         </button>
         <button
-            class="text-sm bg-gray-300 hover:bg-gray-400 text-gray-800 font-semibold py-2 px-4 rounded-r">
+            class="text-sm bg-gray-200 hover:bg-gray-400 text-gray-800 font-semibold py-2 px-4 rounded-r">
+            Next
+        </button> --}}
+    </span>
+    <div class="inline-flex mt-2 xs:mt-0">
+        <button
+            class="text-sm bg-gray-200 hover:bg-gray-400 text-gray-800 font-semibold py-2 px-4 rounded-l">
+            Prev
+        </button>
+        <button
+            class="text-sm bg-gray-200 hover:bg-gray-400 text-gray-800 font-semibold py-2 px-4 rounded-r">
             Next
         </button>
     </div>
